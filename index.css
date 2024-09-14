@@ -1,0 +1,288 @@
+/* Reset and Basic Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    height: 100%;
+    width: 100%;
+}
+
+/* Background Video Container */
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+/* Background Video Styling */
+#background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+/* Header Styling */
+.header-container {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background-color: rgba(0, 128, 128, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.header-title {
+    flex-grow: 1;
+    color: #fff;
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 128, 128, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
+}
+
+nav ul li a:hover {
+    background-color: #20b2aa;
+    color: white;
+}
+
+/* Main Section */
+main {
+    padding: 20px;
+}
+
+/* Section Styling */
+section {
+    margin: 20px 0;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.info-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.info-text {
+    flex: 2;
+    padding-right: 20px;
+    color: #333;
+}
+
+.info-image {
+    flex: 1;
+    text-align: center;
+}
+
+.info-image img {
+    width: 100%;
+    height: auto;
+    max-width: 260px;
+    border-radius: 15px;
+}
+.project-list {
+    display: flex;
+    justify-content: space-around; /* Space the projects evenly */
+    gap: 20px; /* Add space between project items */
+    flex-wrap: wrap; /* Make the items wrap in case of smaller screens */
+}
+
+.project-item {
+    width: 250px; /* Set a fixed width for each project */
+    display: flex;
+    flex-direction: column; /* Stack the image and text */
+    align-items: center; /* Center items */
+    background-color: rgba(32, 178, 170, 0.15);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.project-item img {
+    width: 100%; /* Make the image take up the full width of the container */
+    height: auto; /* Maintain the image aspect ratio */
+    border-radius: 10px;
+    margin-bottom: 10px; /* Space between image and text */
+}
+
+.project-info p {
+    font-size: 1rem;
+    color: #444;
+}
+/* Services Section */
+.services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Form and Contact */
+.flex-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-info, .form-container {
+    flex: 1;
+    padding: 25px;
+    background-color: #008080;
+    color: white;
+    border-radius: 12px;
+}
+
+.contact-info h3 {
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-container input, .form-container textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    background-color: #f5f5f5;
+}
+
+.form-container button {
+    padding: 12px 20px;
+   background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 8px;
+}
+
+.form-container button:hover {
+    background-color: #20b2aa;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #026c70;
+    color: white;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .header-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+}
