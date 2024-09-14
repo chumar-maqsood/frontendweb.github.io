@@ -1,133 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Innovative Front-End Solutions by Umar Maqsood</title>
     <link rel="icon" type="image/x-icon" href="plm.ico">
-    <link rel="stylesheet" href="index.css">
-</head>                                                                                                                                     
+    <link rel="stylesheet" href="index.css">                                                                   
+</head>
 <body>
-    <header class="header-container">
-    <video autoplay muted loop playsinline class="background-video">
-        <source src="imi.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <div class="header-overlay">
-        <div class="header-nav">
-            <img src="qwe.png" alt="Logo" class="logo">
-            <h1 class="header-title">Front-End Web Developer</h1>
+    <!-- Header Section with Video Background -->
+    <header class="header-section">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="qwe.png" alt="Logo" class="logo">
+            </div>
+            <ul class="nav-list">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Background Video -->
+        <div class="video-container">
+            <video autoplay muted loop playsinline id="background-video">
+                <source src="imi.MP4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Header Content -->
+        <div class="header-content">
+            <div class="intro-text">
+                <h1>Innovative Front-End Solutions by Umar Maqsood</h1>
+            </div>
             <div class="social-links">
+                <a href="#"><img src="qaw.png" alt="LinkedIn" class="social-icon"></a>
                 <a href="#"><img src="fb.png" alt="facebook" class="social-icon"></a>
-                <a href="#"><img src="qaw.png" alt="linkedin" class="social-icon"></a>
             </div>
         </div>
-    </div>
-</header>
+    </header>
 
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <section id="about">
-            <div class="info-content">
-                <div class="info-text">
-                    <h2>About Me</h2>
-                    <br>
-                    <p>I'm an experienced web developer with expertise in creating responsive, user-friendly websites. I specialize in front-end development using HTML, CSS, and JavaScript. I am passionate about building websites that not only look great but also provide an excellent user experience.</p>
-                    <br>
-                    <br>
-                    <p>I'm Umar Maqsood, born in Kashmir and raised in Rawalpindi, Pakistan. I received my primary education at Army Public School and completed my FSc in Pre-Engineering at Sir Syed Ahmed College. Later, I pursued a Bachelor's degree (BS) in Economics from the International Islamic University Islamabad (IIUI). With a strong interest in digital marketing, I chose to become a freelancer and develop my IT skills. Now, I am a professional web developer, continuously working hard to achieve success in this field.</p>
-                </div>
-                <div class="info-image">
-                    <h2>Umar Maqsood</h2>
-                    <img src="mmm.JPG" alt="Umar Maqsood">
-                </div>
+    <!-- About Me Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="text-content">
+                <h3 class="name-heading">Umar Maqsood</h3>
+                <p>I specialize in custom web development using HTML, CSS, and JavaScript to create user-friendly and visually appealing websites. My focus is on front-end development, ensuring responsive and modern web designs.</p>
             </div>
-        </section>
+            <div class="image-content">
+                <img src="mmm.jpg" alt="Umar Maqsood" class="profile-image">
+            </div>
+        </div>
+    </section>
 
-        <!-- Projects Section -->
-        <section id="projects">
-    <h2>My Projects</h2>
-    <div class="project-list">
-        <div class="project-item">
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <div class="project-item">
             <img src="ecom.png" alt="E-commerce Website">
-            <div class="project-info">
-                <p><strong>Project 1:</strong> E-commerce Website - Developed a fully functional e-commerce website using HTML, CSS, and JavaScript.</p>
-            </div>
-        </div>
-        <div class="project-item">
-            <img src="resp.png" alt="Portfolio Website">
-            <div class="project-info">
-                <p><strong>Project 2:</strong> Portfolio Website - Created a personal portfolio website for a photographer using responsive design techniques.</p>
-            </div>
-        </div>
-        <div class="project-item">
-            <img src="blog.png" alt="Blog Platform">
-            <div class="project-info">
-                <p><strong>Project 3:</strong> Blog Platform - Built a blogging platform with a custom CMS using HTML, CSS, and JavaScript.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-        <!-- Services Section -->
-        <section id="services">
-            <h2>Services</h2>
-            <div class="services-list">
-                <p><strong>Service 1:</strong> Web Development</p>
-                <p><strong>Service 2:</strong> Front-End Design</p>
-                <p><strong>Service 3:</strong> SEO Optimization</p>
-            </div>
-        </section>
-
-        <!-- Contact Section with Larger Form and Two Column Layout -->
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <div class="flex-container">
-                <!-- Contact Information -->
-                <div class="contact-info">
-                    <h3>Get In Touch</h3>
-                    <p><strong>Email:</strong> <a href="mailto:umarmaqsood594@gmail.com">umarmaqsood594@gmail.com</a></p>
-                    <p><strong>Phone:</strong> <a href="tel:+923345194301">+923345194301</a></p>
+                    <p>E-commerce Website - Developed with HTML, CSS, and JavaScript.</p>
                 </div>
+                <div class="project-item">
+                    <img src="resp.png" alt="Portfolio Website">
+                    <p>Portfolio Website - Responsive design for a photographer.</p>
+                </div>
+                <div class="project-item">
+                    <img src="blog.png" alt="Blog Platform">
+                    <p>Blog Platform - Custom CMS with HTML, CSS, and JavaScript.</p>
+                </div>
+        </div>
+    </section>
 
-                <!-- Contact Form -->
-                <div class="form-container">
-                    <form action="https://formspree.io/f/your-form-id" method="POST">
-    <div>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <h2>Services</h2>
+        <div class="services-list">
+            <div class="services-item">
+                <img src="ser.png" alt="Service 1">
+                <p>Web Development</p>
+            </div>
+            <div class="services-item">
+                <img src="seo.png" alt="Service 2">
+                <p>Responsive Design</p>
+            </div>
+            <div class="services-item">
+                <img src="sht.png" alt="Service 2">
+                <p>Frontend</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <div>
+<div class="contact-container">
+    <div class="contact-info">
+        <p>Email: <a href="mailto:umarmaqsood594@gmail.com">umarmaqsood594@gmail.com</a></p>
+        <p>Phone: <a href="tel:+923345194301">+923345194301</a></p>
     </div>
-    <div>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-    </div>
-    <div>
-        <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone" required>
-    </div>
-    <div>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-    </div>
-    <div>
-        <button type="submit">Submit</button>
-    </div>
+
+            <form class="contact-form" id="contactForm">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
 </form>
-                </div>
-            </div>
-        </section>
-    </main>
+<p id="formResponse" style="display: none; color: green;">Your message was sent successfully!</p>
+<script>
+    document.getElementById("contactForm").addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent the form from submitting normally
 
+        // Capture form data
+        const name = document.querySelector('input[name="name"]').value;
+        const email = document.querySelector('input[name="email"]').value;
+        const message = document.querySelector('textarea[name="message"]').value;
+
+        // Simulate successful form submission (you would send this data to your server)
+        console.log("Name: " + name + ", Email: " + email + ", Message: " + message);
+
+        // Show success message
+        document.getElementById("formResponse").style.display = "block";
+
+        // Clear the form fields
+        document.getElementById("contactForm").reset();
+    });
+</script>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Umar Maqsood - All Rights Reserved</p>
+        <p>&copy; 2024 Umar Maqsood. All rights reserved.</p>
     </footer>
 </body>
 </html>
